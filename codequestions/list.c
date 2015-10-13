@@ -7,8 +7,8 @@
 struct list_node *list_create(int val) {
 	struct list_node* head = (struct list_node*)malloc(sizeof(struct list_node));
 		    
-    head->val = val;
-    head->next = NULL;
+	head->val = val;
+	head->next = NULL;
 	return head;
 }
 
