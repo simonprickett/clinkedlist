@@ -30,8 +30,6 @@ int list_append(struct list_node *list, int val) {
 		return 0;
 	}
 
-	struct list_node *curr = list;
-
 	struct list_node *newNode = (struct list_node*)malloc(sizeof(struct list_node));
 	newNode->val = val;
 	newNode->next = NULL;
