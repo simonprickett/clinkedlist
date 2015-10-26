@@ -97,6 +97,9 @@ int main(int argc, char **argv) {
 		printf("\nNow recursively adding 5 after 3...\n");
 		list_insert_after_recursive(&myList, 3, 5);
 		list_print(myList);
+		printf("\nNow recursively adding 7 after 99 should do nothing as no 99.\n");
+		list_insert_after_recursive(&myList, 99, 7);
+		list_print(myList);
     } else {
     	printf("Error creating myList.\n");
     }
