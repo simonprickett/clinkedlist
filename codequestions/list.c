@@ -12,6 +12,22 @@ struct list_node *list_create(int val) {
 	return head;
 }
 
+int list_insert_after_recursive(struct list_node **list, int node_val, int val) {
+	if (*list == NULL) {
+		return 0;
+	}
+
+	if ((*list)->val == node_val) {
+		struct list_node *newNode = (struct list_node*)malloc(sizeof(struct list_node));
+		newNode->next = (*list)->next;
+		newNode->val = val;
+		(*list)->next = newNode;
+		return 1;
+	}
+
+	return list_insert_after_recursive(&(*list)->next, node_val, val);
+}
+
 int list_prepend(struct list_node **list, int val) {
 	if (*list == NULL) {
 		return 0;

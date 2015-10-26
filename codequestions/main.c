@@ -87,6 +87,16 @@ int main(int argc, char **argv) {
     	} else {
     		printf("Cleaned up myList successfully.\n");
     	}
+
+		printf("\nBuild a list of integers to test recursive insert after.\n");
+		myList = list_create(1);
+		list_append(myList, 2);
+		list_append(myList, 3);
+		list_append(myList, 4);
+		list_print(myList);
+		printf("\nNow recursively adding 5 after 3...\n");
+		list_insert_after_recursive(&myList, 3, 5);
+		list_print(myList);
     } else {
     	printf("Error creating myList.\n");
     }
