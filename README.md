@@ -1,10 +1,10 @@
-#C Linked List
+# C Linked List
 
 C Linked List mentoring work.
 
-##Folder: codequestions
+## Folder: codequestions
 
-###Instructions
+### Instructions
 
 ```
 cd codequestions
@@ -13,7 +13,7 @@ make
 ./listdemo
 ```
 
-###Questions
+### Questions
 
 * Explain the structure of the code, why ```list.h``` and ```list.c```
 * How is ```main.c``` able to use functions from ```list.c```?
